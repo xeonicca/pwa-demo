@@ -8,14 +8,9 @@
     <meta name="author" content="">
     <link rel="icon" href="src/images/favicon.ico">
 
-    <title>Cover Template for Bootstrap</title>
-    <link rel="preload" href="src/css/bootstrap.min.css" as="style">
+    <title>RUTEN PWA demo</title>
     <link rel="preload" href="src/css/cover.css" as="style">
-    <link rel="preload" href="src/js/vue.min.js" as="script">
     <link rel="preload" href="src/js/app2.js" as="script">
-
-    <!-- Bootstrap core CSS -->
-    <link href="src/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="src/css/cover.css" rel="stylesheet">
@@ -23,8 +18,8 @@
 
   <body class="text-center">
 
-    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
+    <div class="cover-container d-flex p-3 mx-auto flex-column">
+      <header class="masthead">
         <div class="inner">
           <h3 class="masthead-brand">RUTEN</h3>
           <nav class="nav nav-masthead justify-content-center">
@@ -32,19 +27,14 @@
             <a class="nav-link" href="preload.html">Preload</a>
             <a class="nav-link" href="preload-async.html">Preload Async</a>
             <a class="nav-link active" href="queue.html">Queue</a>
+            <a class="nav-link" href="inline-css.html">Inline CSS</a>
           </nav>
         </div>
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Page with Event Queue</h1>
-        <p class="lead">{{ message }}</p>
-        <div class="form-group">
-          <label for="exampleFormControlSelect2">Dropdown with {{ complexData.length }} items</label>
-          <select class="form-control" id="exampleFormControlSelect2">
-            <option v-for="data in complexData">{{ data }}</option>
-          </select>
-        </div>
+        <h3 class="cover-heading">Page with Event Queue</h3>
+        <p class="lead">Append <span id="itemCount"></span> items</p>
       </main>
 
       <footer class="mastfoot mt-auto">
@@ -54,8 +44,6 @@
       </footer>
     </div>
 
-
-    <script src="src/js/vue.min.js"></script>
     <script src="src/js/app2.js"></script>
   </body>
 </html>
